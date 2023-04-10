@@ -1,4 +1,4 @@
-fetch('https://weatherapp-backend-beryl.vercel.app/weather')
+fetch('https://weatherapp-backend-cecileliao.vercel.app/weather')
 	.then(response => response.json())
 	.then(data => {
 		if (data.weather) {
@@ -24,7 +24,7 @@ fetch('https://weatherapp-backend-beryl.vercel.app/weather')
 function updateDeleteCityEventListener() {
 	for (let i = 0; i < document.querySelectorAll('.deleteCity').length; i++) {
 		document.querySelectorAll('.deleteCity')[i].addEventListener('click', function () {
-			fetch(`https://weatherapp-backend-beryl.vercel.app/weather/${this.id}`, { method: 'DELETE' })
+			fetch(`https://weatherapp-backend-cecileliao.vercel.app//weather/${this.id}`, { method: 'DELETE' })
 				.then(response => response.json())
 				.then(data => {
 					if (data.result) {
